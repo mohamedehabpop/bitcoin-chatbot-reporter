@@ -4,9 +4,9 @@ import time
 
 
 #global variables
-btc_api_key = '7c667c1a-b5fa-4a6b-83c1-4024c3aa788e'
-bot_key = '1846331338:AAHTIiI4T1x54epo7E4NeQf1OQz3CAnxD1A'
-chat_id = '956402152'
+btc_api_key = 'place your key here'
+bot_key = 'place your key here'
+chat_id = 'place your chatbot id here'
 limit = 40000
 request_time = 60
 
@@ -36,7 +36,7 @@ def main():
         price = get_price()
         print(price)
         if price < limit:
-            send_update(chat_id, f"  يا نجم سعر البيتكوين : {price}")
+            send_update(chat_id, f"   سعر البيتكوين : {price}")
         time.sleep(request_time)
 
 
